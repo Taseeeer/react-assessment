@@ -1,38 +1,67 @@
-.App {
-  text-align: center;
+.container-outermost {
+  width: 85%;
+  margin: 1rem auto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.essay-inner {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+  margin-top: 1rem;
+  padding: 1rem;
+  border-radius: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+.essay-title {
+  padding: 2rem 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.essay-paragraphs > p {
+  padding: 0.5rem 0;
+}
+
+.feedback-section {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  align-items: center;
+  padding-bottom: 1rem;
+  width: 30%;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+  border-radius: 10px;
+  transition: 0.2s ease;
+}
+
+.feedback-section:hover {
+  transform: scale(1.1);
+  background-color: rgb(226 232 240);;
+}
+
+.feedback-section > p {
+  color: var(--primary-color);
+  font-weight: 500;
+  font-size: 1.2rem;
+  padding: 1rem 0;
+}
+
+.button-outer {
+  display: flex;
+  justify-content: center;
+  padding-top: 0.8rem;
+}
+
+.review-button {
+  background-color: var(--primary-color);
+  padding: 1rem;
+  color: whitesmoke;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.review-button:hover {
+  transform: scale(1.1);
 }
